@@ -1,0 +1,89 @@
+.pagination {
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    margin-bottom: 300px;
+    padding-bottom: 50%;
+    margin-top: 250px;
+}
+
+.pagination a {
+    color: black;
+    padding: 8px 16px;
+    text-decoration: none;
+    display: inline-block;
+
+}
+
+.pagination a.active {
+    background-color: #36e63c;
+    font-weight: bold;
+    color: white;
+    border-radius: 5px;
+}
+
+.pagination a:hover:not(.active) {
+    background-color: #ddd;
+    border-radius: 5px;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+}
+
+.navbar-side {
+    width: 250px;
+    /* Đảm bảo navbar rộng 250px */
+    height: 100vh;
+    background-color: #f1f1f1;
+    display: flex;
+    flex-direction: column;
+    /* Xếp dọc các mục */
+    align-items: stretch;
+    /* Đảm bảo con của nó mở rộng hết */
+}
+
+.navbar-side ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    /* Đảm bảo nó full chiều rộng navbar */
+    display: flex;
+    flex-direction: column;
+    /* Giữ các mục xếp dọc */
+}
+
+.navbar-side ul li {
+    width: 100%;
+    /* Đảm bảo li cũng full width */
+}
+
+.navbar-side ul li a {
+    display: flex;
+    align-items: center;
+    /* Căn giữa nội dung theo chiều dọc */
+    justify-content: center;
+    /* Căn giữa nội dung theo chiều ngang */
+    width: 100%;
+    /* Đảm bảo a mở rộng hết li */
+    padding: 10px;
+    text-decoration: none;
+    background-color: #f1f1f1;
+    color: black;
+}
+
+.navbar-side ul li a:hover {
+    background-color: #36e63c;
+    color: white;
+}
+
+
+/* Nội dung chính */
+.content {
+    overflow: auto;
+    /* Hiển thị thanh cuộn khi nội dung vượt quá kích thước */
+    flex: 1;
+
+}

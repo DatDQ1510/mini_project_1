@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <title>Document</title>
+    <style>
+        body {
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+            width: 100%;
+
+        }
+
+        li {
+            width: 200px;
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: underline;
+        }
+
+        li a:hover:not(.active) {
+            background-color: white;
+            color: black;
+        }
+
+        .active {
+            background-color: #04AA6D;
+        }
+
+        h1 {
+            text-align: center;
+            color: red
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- npx live-server -->
+    <h1>Mini Project 1</h1>
+
+    <ul id="navbar">
+        <li class="active"><a href="./logo.html">logo</a></li>
+        <li><a href="./course_information.html">Thông tin môn học</a></li>
+        <li><a href="./tech_web.html">Các công nghệ Web</a></li>
+        <li><a href="./student_information.html">Thông tin sinh viên</a></li>
+    </ul>
+
+</body>
+
+</html>
