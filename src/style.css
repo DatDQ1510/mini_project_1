@@ -1,10 +1,12 @@
 .pagination {
-    position: fixed;
-    bottom: 0;
-    text-align: center;
-    margin-bottom: 300px;
-    padding-bottom: 50%;
+    position: relative;
 
+    top: 50px;
+    bottom: 10px;
+    /* Để cách một khoảng thay vì margin-bottom */
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
 }
 
 .pagination a {
@@ -12,7 +14,6 @@
     padding: 8px 16px;
     text-decoration: none;
     display: inline-block;
-
 }
 
 .pagination a.active {
@@ -28,47 +29,44 @@
 }
 
 .container {
-    width: 100%;
     display: flex;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    /* Đảm bảo chiều cao full màn hình */
 }
 
 .navbar-side {
-    width: 250px;
-    /* Đảm bảo navbar rộng 250px */
-    height: 100vh;
-    background-color: #f1f1f1;
     display: flex;
+    height: 100%;
+    background-color: #f1f1f1;
+    width: 250px;
     flex-direction: column;
-    /* Xếp dọc các mục */
     align-items: stretch;
-    /* Đảm bảo con của nó mở rộng hết */
+
 }
 
 .navbar-side ul {
     list-style-type: none;
-    margin: 0;
+    margin-top: 20px;
     padding: 0;
     width: 100%;
-    /* Đảm bảo nó full chiều rộng navbar */
     display: flex;
     flex-direction: column;
-    /* Giữ các mục xếp dọc */
 }
 
 .navbar-side ul li {
     width: 100%;
-    /* Đảm bảo li cũng full width */
+    align-items: center;
+    justify-content: center;
 }
 
 .navbar-side ul li a {
     display: flex;
-    align-items: center;
-    /* Căn giữa nội dung theo chiều dọc */
-    justify-content: center;
-    /* Căn giữa nội dung theo chiều ngang */
+    text-align: center;
+    font: 20px bold;
     width: 100%;
-    /* Đảm bảo a mở rộng hết li */
-    padding: 10px;
+    padding: 20px;
     text-decoration: none;
     background-color: #f1f1f1;
     color: black;
@@ -79,11 +77,92 @@
     color: white;
 }
 
-
 /* Nội dung chính */
 .content {
-    overflow: auto;
-    /* Hiển thị thanh cuộn khi nội dung vượt quá kích thước */
-    flex: 1;
+    flex: 2;
+    overflow-y: auto;
 
+    padding: 20px;
+    /* Để tránh dính lề */
+    background-color: #fff;
+
+    height: 600px;
+    overflow: auto;
+
+    scrollbar-width: none;
+
+}
+
+.content::-webkit-scrollbar {
+    display: none;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.course-info {
+
+    background-color: #c5e5f8;
+    padding: 20px;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 1400px;
+    max-height: 900px;
+
+
+}
+
+.info_1 {
+    display: flex;
+    margin-bottom: 50px;
+
+}
+
+.course-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* Chia làm 2 cột */
+    gap: 120px;
+}
+
+
+
+.general_information {
+    color: aqua;
+    font: 24px bold;
+    margin-left: 10px;
+}
+
+
+
+.image {
+    width: 35%;
+    text-align: right;
+
+
+}
+
+.image img {
+    max-width: 350px;
+    height: auto;
+    border-radius: 40px;
+}
+
+.container_1 {
+    max-width: 800px;
+    margin: 80px auto;
+    background: white;
+    padding: 20px;
+    border: dotted rgb(177, 25, 157);
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container_1 h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333
 }

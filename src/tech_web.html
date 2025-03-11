@@ -28,8 +28,17 @@
         </div>
         <!-- Nội dung chính -->
         <main class="content">
-            <h1 id="section1">Chào mừng bạn!</h1>
-            <p>Đây là nội dung chính của trang web.</p>
+            <div class="container_1">
+                <h1>Công nghệ Web: HTML & CSS</h1>
+                <h2>HTML (HyperText Markup Language)</h2>
+                <p>HTML là ngôn ngữ đánh dấu được sử dụng để tạo cấu trúc của một trang web. Nó giúp xác định các thành
+                    phần như tiêu đề, đoạn văn, hình ảnh, liên kết, bảng biểu, biểu mẫu và nhiều thành phần khác.</p>
+                <h2>CSS (Cascading Style Sheets)</h2>
+                <p>CSS là ngôn ngữ dùng để định dạng giao diện của trang web. Nó giúp kiểm soát màu sắc, kiểu chữ, bố
+                    cục và hiệu ứng của các phần tử HTML, từ đó làm cho trang web trở nên đẹp mắt và thân thiện hơn với
+                    người dùng.</p>
+            </div>
+
             <div class="pagination">
                 <a href="#">&laquo;</a>
                 <a href="./logo.html">1</a>
@@ -41,31 +50,29 @@
 
                 <a href="#">&raquo;</a>
             </div>
-        </main>`
-
-    </div>
-    <footer>
-        <div id="myFooter"></div>
-    </footer>
+        </main>
+        <footer>
+            <div id="myFooter"></div>
+        </footer>
 
 
-    <script>
-        fetch("header.html")
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById("myHeader").innerHTML = data;
-            })
-            .catch(error => console.error("Error loading footer:", error));
-    </script>
+        <script>
+            fetch("header.html")
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById("myHeader").innerHTML = data;
+                })
+                .catch(error => console.error("Error loading footer:", error));
+        </script>
 
-    <script>
-        fetch("footer.html")
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById("myFooter").innerHTML = data;
-            })
-            .catch(error => console.error("Error loading footer:", error));
-    </script>
+        <script>
+            fetch("footer.html")
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById("myFooter").innerHTML = data;
+                })
+                .catch(error => console.error("Error loading footer:", error));
+        </script>
 </body>
 
 </html>

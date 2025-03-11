@@ -5,10 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
     <style>
-        .logo {
-            width: 100%;
+        .info {
+            display: block;
+        }
+
+        .info p {
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid black;
+            text-align: center;
         }
     </style>
 </head>
@@ -18,7 +25,6 @@
     <header>
         <div id="myHeader"></div>
     </header>
-    <div>hello</div>
     <div class="container">
         <!-- Navbar dọc -->
         <div>
@@ -32,8 +38,13 @@
         </div>
         <!-- Nội dung chính -->
         <main class="content">
-            <h1 id="section1">Chào mừng bạn!</h1>
-            <p>Đây là nội dung chính của trang web.</p>
+            <div class="info">
+                <p>Thông tin khai giảng : 09/02/2025</p>
+                <p>Thông tin Seminar: No</p>
+                <p>Thông tin các công ty quan tâm</p>
+            </div>
+
+
             <div class="pagination">
                 <a href="#">&laquo;</a>
                 <a href="./logo.html" class="active">1</a>

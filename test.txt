@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thông tin học phần</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="course-info">
+        <div class="info-left">
+            <p><strong>Đơn vị:</strong> Trường Công nghệ Thông tin và Truyền thông</p>
+            <p><strong>Đơn vị con:</strong> Khoa Kỹ thuật Máy tính, Khoa Khoa học Máy tính</p>
+            <p><strong>Mã học phần:</strong> <span class="highlight">IT4409</span></p>
+            <p><strong>Tên học phần:</strong> <span class="highlight">Công nghệ Web và dịch vụ trực tuyến</span></p>
+            <p><strong>Tên tiếng anh:</strong> <span class="highlight">Web technologies and e-Services</span></p>
+            <p><strong>Hệ đào tạo:</strong> Thạc sĩ Khoa học, Kỹ sư chính quy, Cử nhân, Việt-Nhật</p>
+        </div>
+        <div class="info-right">
+            <p><strong>Ngành đào tạo:</strong> ___</p>
+            <p><strong>Loại hình:</strong> <span class="highlight">Lớp</span></p>
+            <p><strong>Điều phối viên:</strong> <span class="highlight">Phạm Huy Hoàng</span></p>
+            <p><strong>Nhóm chuyên môn:</strong> <span class="highlight">Phạm Huy Hoàng</span></p>
+            <p><strong>Học phần liên quan:</strong> ___</p>
+        </div>
+    </div>
+</body>
+</html>
